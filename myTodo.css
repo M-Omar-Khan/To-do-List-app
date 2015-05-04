@@ -1,0 +1,236 @@
+
+
+#header{
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    background:#00796B;
+
+}
+#header img{
+    height: 65px;
+    margin: 10px;
+    margin-left: 25px;
+
+}
+
+#search_bar{
+    width: 90%;
+    height: 200px;
+    margin: 0px auto;
+    background: #4DB6AC;
+    text-align: center;
+
+}
+#pencil  {
+    width: 05%;
+    height: 70px;
+    margin: 0px auto;
+
+
+}
+
+.container      {
+    font-family: monospace;
+    width:80%;
+    margin:0px auto 0;
+    display:block;
+    /*border: 1px solid red; */
+
+}
+.group            {
+    position:relative;
+
+}
+input               {
+
+
+    font-size:30px;
+    padding:5px 10px 10px 5px;
+    display:block;
+    width:90%;
+    border:none;
+    border-bottom:1px solid #C0C0C0;
+    background: none;
+    color:#063a2c;
+}
+input:focus         { outline:none; }
+
+/* LABEL ======================================= */
+label                {
+    font-family: monospace;
+    color: #C0C0C0;
+    font-size:30px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label        {
+    top:-20px;
+    font-size:14px;
+    color:#00897B;
+}
+
+/* BOTTOM BARS ================================= */
+.bar    { position:relative; display:block; width:90%; }
+.bar:before, .bar:after     {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#00897B;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%;
+    width:90%;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#00695C; }
+    to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#00695C; }
+    to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#00695C; }
+    to    { width:0; background:transparent; }
+}
+
+
+
+/* Fab */
+
+
+.fab {
+    border:none;
+    font-size:1.5em;
+    color:white;
+    background-color:  #00695C;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+    -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+    box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+    float: right;
+}
+
+.fab:hover {
+    background-color: #00897B;
+}
+
+
+
+
+.selectdemoBasicUsage p {
+    padding: 0 10px;
+    text-align: center;
+
+
+}
+.selectdemoBasicUsage p.md-caption {
+    color: #777; }
+.selectdemoBasicUsage .demo-content {
+}
+
+
+
+#data{
+    width: 90%;
+    height: 350px;
+
+    margin: 0px auto;
+
+
+
+}
+
+#delete{
+    width: 150px;
+    height: 30px;
+    background: #00695C;
+
+    margin: 0px auto;
+
+    text-align: center;
+    padding: 05px;
+    color: white;
+    border: none;
+    font-family: monospace;
+    font-size: larger;
+}
+#delete:hover{
+    width: 150px;
+    height: 30px;
+    background:#00897B;
+    margin:0px auto ;
+    text-align: center;
+    padding: 05px;
+    color: white;
+    border: none;
+    font-family: monospace;
+    font-size: larger;
+}
+
+
+md-checkbox{
+    margin-left: 300px;
+    font-family: monospace;
+    font-size: 25px;
+
+
+}
+.checkBox{
+    margin-top: 60px;
+    color:  #00695C ;
+
+
+}
+
+.done-true{
+    text-decoration: line-through;
+    color: #063a2c;
+
+
+}

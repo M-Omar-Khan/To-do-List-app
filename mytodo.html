@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+
+    <title>Omar's To-do app</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+
+    <link rel="stylesheet" href="myTodo.css" type="text/css">
+
+
+
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+
+    <script src="myTodo.js"></script>
+</head>
+<body  ng-controller="TodoCtrl">
+
+<div id="header">
+
+    <img src="images/todo.png">
+
+
+</div>
+<div >
+<div id="search_bar">
+
+    <img  id="pencil" src="images/flat_seo2-50-512.png"/>
+    <div class="container">
+        <div class="group">
+
+            <input type="text" ng-model="todo" required >
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>+ type your task here</label>
+
+            <button ng-click="addTodo()" class="fab">+</button>
+
+
+        </div>
+        </div>
+        </div>
+    </div>
+<div id="data">
+    <button  ng-click="deleteTask()" id="delete">CLEAR</button>
+    <div class="checkBox">
+
+        <ul>
+        <li style="list-style: none" ng-repeat="todo in todos">
+
+            <md-checkbox  ng-model="todo.done" class="md-primary">
+                <span  class="done-{{todo.done}}">{{todo.myText}}</span>
+            </md-checkbox>
+            </li>
+        </ul>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>

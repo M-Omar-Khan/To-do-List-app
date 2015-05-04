@@ -1,0 +1,18 @@
+{
+  "name": "myTodoProject",
+  "version": "1.0.0",
+  "description": "mySimpleTodoProject",
+  "main": "myTodo.js",
+  "scripts": {
+    "test": "yes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "yes"
+  ],
+  "author": "Muhammad_Omar",
+  "license": "ISC"
+}
